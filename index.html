@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nasir Uddin - Digital Business Card</title>
+  <title>Md. Lavlu Hasan - Digital Business Card</title>
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <!-- FontAwesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-        /* Reset and base */
-    * {
+    /* Reset and base */
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -31,7 +31,9 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
+a {
+  text-decoration: none;
+}
     /* Animations */
     @keyframes fadeInUp {
       0% {
@@ -61,7 +63,10 @@
       animation: fadeInUp 0.8s ease forwards;
       opacity: 0;
     }
-
+.logo img {
+    height: 100px;
+    padding-bottom: 20px;
+}
     /* Profile picture */
     .profile-pic {
       width: 130px;
@@ -127,7 +132,6 @@
     .contact-card:hover {
       box-shadow: 0 18px 40px rgba(99, 102, 241, 0.25);
     }
-
     .contact-item {
       display: flex;
       align-items: center;
@@ -192,6 +196,9 @@
     .add-contact:hover {
       background: linear-gradient(90deg, #4f46e5, #6366f1);
       box-shadow: 0 12px 30px rgba(79, 70, 229, 0.7);
+    }
+    .contact-card a:hover {
+      text-decoration: none;
     }
     .add-contact:hover::before {
       left: 125%;
@@ -307,7 +314,10 @@
 
   <!-- Header -->
   <div class="header">
-    <img src="https://qr.scan.page/uploads/vcard/sgFvimA7ZU48gMpWZj88Sfl4XhksqqS4zhR9b55e.jpg" alt="Mohammad Sayeed Profile Picture" class="profile-pic" />
+    <div class="logo">
+      <img src="img/Logo.png" alt="">
+    </div>
+    <img src="img/nasir.jpg" alt="Nasir Uddin Profile Picture" class="profile-pic" />
   </div>
 
   <!-- Name & Title -->
@@ -316,38 +326,40 @@
 
   <!-- Contact Card -->
   <div class="contact-card" aria-label="Contact Information">
-    <div class="contact-item" title="Phone"><i class="fas fa-phone"></i> +880 1717-888874</div>
-    <div class="contact-item" title="Email"><i class="fas fa-envelope"></i> nasir.shadeshit@gmail.com</div>
-    <div class="contact-item" title="Location"><i class="fas fa-map-marker-alt"></i> Middle Badda, Dhaka, Bangladesh</div>
+    <div class="contact-item" title="Phone"><i class="fas fa-phone"></i> +8801717888874</div>
+    <div class="contact-item" title="Email"><i class="fas fa-envelope"></i> nasir.swadeshit@gmail.com</div>
+    <div class="contact-item" title="Location"><i class="fas fa-map-marker-alt"></i> Uttar Badda, Dhaka, Bangladesh</div>
     <div class="contact-item" title="Work"><i class="fas fa-briefcase"></i> Swadesh IT - Sr. Programmer Analyst</div>
-    <button class="add-contact" aria-label="Add Contact">Add Contact</button>
+    <a href="contact.vcf" download class="add-contact-btn">
+      <button class="add-contact" aria-label="Add Contact"><i class="fas fa-address-card"></i> Add Contact</button>
+    </a>
   </div>
 
   <!-- Social Links -->
   <div class="social-links" aria-label="Social Media Links">
-    <a href="https://www.facebook.com/mohammadsayeed5436">
+    <a href="">
       <div class="social-item facebook" tabindex="0" role="button" aria-label="Facebook Profile">
         <i class="fab fa-facebook-f"></i> <span>Facebook</span>
       </div>
     </a>
-    <a href="https://wa.me/8801836501233">
+    <a href="https://wa.me/+8801717888874">
       <div class="social-item whatsapp" tabindex="0" role="button" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
       </div>
     </a>
-    <a href="https://t.me/mohammadsayeedofficial">
+    <a href="">
       <div class="social-item telegram" tabindex="0" role="button" aria-label="Telegram">
         <i class="fab fa-telegram-plane"></i> <span>Telegram</span>
       </div>
     </a>
-    <a href="https://www.linkedin.com/in/mohammad-sayeed-vai">
-      <div class="social-item linkedin" tabindex="0" role="button" aria-label="LinkedIn Profile">
-        <i class="fab fa-linkedin-in"></i> <span>LinkedIn</span>
-      </div>
-    </a>
-    <a href="https://www.youtube.com/@arrafee">
+    <a href="">
       <div class="social-item youtube" tabindex="0" role="button" aria-label="YouTube Channel">
         <i class="fab fa-youtube"></i> <span>YouTube</span>
+      </div>
+    </a>
+    <a href="">
+      <div class="social-item linkedin" tabindex="0" role="button" aria-label="LinkedIn Profile">
+        <i class="fab fa-linkedin-in"></i> <span>LinkedIn</span>
       </div>
     </a>
   </div>
